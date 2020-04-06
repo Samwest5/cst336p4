@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 html(lang="en")
-  head
-    title #{ title }
-    script(src="https://code.jquery.com/jquery-3.1.0.js")
-    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css")
+  include partials/header
   body
     include partials/navbar
-
+    div Big O Notation 
+    p    
+      | Big O notation is used in computer science to classify algorithms 
+      | according to how their running time or space requirements grow as the input size
+      | grows. Complexity of a given algorithm is an important consideration to
+      | make when designing or choosing which approach to take to solve a given problem.
+      | Objectively some are better than others. 
+    div 
+      ul
+        li O(1)
+        li O(logn)
+        li O(n)
+        li O(nlogn)
+        li O(n^2)
+        li O(2^n)
+        li O(n!)
+        li O(?)
     include partials/footer
